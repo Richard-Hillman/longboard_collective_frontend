@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const LandingPage = () => {
     return (
@@ -11,8 +12,8 @@ const LandingPage = () => {
                             Create a Longboarder profile here. Share where you shred and connect with other longboarders in your area! 
                         </p> 
                         <div className='buttons'>
-                            <a href='register.html' className='btn btn-primary'>Sign Up Link</a>
-                            <a href='login.html' className='btn btn-light' aria-label='click here to login to an existing profile'>Login Link</a>
+                            <Link to='/register' className='btn btn-primary'>Sign Up Link</Link>
+                            <Link to='/login' className='btn btn-light' aria-label='click here to login to an existing profile'>Login Link</Link>
                         </div>
                     </div>
                 </div>
