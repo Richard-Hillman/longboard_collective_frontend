@@ -1,20 +1,19 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const NavigationBar = () => {
     return (
         <div>
-            <nav className="navbar bg-dark">
-                <h1>
-                    <Link to='index.html'><i className='fas fa-code'></i> Longboard Collective</Link>
-                </h1>
-                <ul>
-                    <li><Link to='profiles.html'>Developers Of LBC</Link></li>
-                    <li><Link to='register.html'>Register</Link></li>
-                    <li><Link to='login.html'>Login</Link></li>
+
+            <nav role="menubar" className="navbar bg-dark">
+                <ul id="mega-menu" role="presentation" >
+                    <li id="home"  role="presentation"><a href="/" role="menuitem" aria-setsize="5" aria-posinset="1"><i className="fa fa-home"></i>Longboard Collective</a></li>
+                    <li id="register"  role="presentation"><a href="/register" role="menuitem" aria-setsize="5" aria-posinset="1"><i className="fa fa-register"></i>Register</a></li>
+                    <li id="login"  role="presentation"><a href="/login" role="menuitem" aria-setsize="5" aria-posinset="1"><i className="fa fa-register"></i>Login</a></li>
                 </ul>
             </nav>
+
         </div>
+    
     )
 }
 
