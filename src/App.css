@@ -330,6 +330,13 @@ button {
   margin-right: 0.6rem;
 }
 
+/* Register and Login Page Container */
+.registerLoginContainer {
+  position: relative;
+  padding: 25%;
+}
+
+
 /* Landing Page */
 .landing {
   position: relative;
