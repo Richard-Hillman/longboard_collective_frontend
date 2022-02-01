@@ -1,7 +1,7 @@
 import React from 'react';
 import { Fragment, useState } from 'react';
 import { Link } from 'react-router-dom'; 
-
+import Alert from '../layout/alert'
 
 const Login = () => {
     const [formData, setFormData] = useState({
@@ -20,6 +20,7 @@ const Login = () => {
 
     return (
         <Fragment>
+            <Alert />
             <div className='registerLoginContainer'>
 
                 <h1 className="large text-primary">Login</h1>
